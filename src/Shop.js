@@ -1,12 +1,15 @@
-class Shop {
-  constructor(items = []) {
-    this.items = items;
-  }
-  updateStock() {
-    return this.items.map(function (item) {
-      return item.itemTomorrow();
-    });
-  }
-}
+'use strict';
 
-export default Shop;
+; (function (exports) {
+  class Shop {
+    constructor(items = []) {
+      this.items = items;
+    }
+    updateStock() {
+      return this.items.map(function (item) {
+        return item.itemTomorrow();
+      });
+    }
+  }
+  exports.Shop = Shop;
+}(this));

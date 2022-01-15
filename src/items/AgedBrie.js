@@ -1,10 +1,10 @@
-import StandardItem from "./StandardItem";
+'use strict';
 
-class AgedBrie extends StandardItem {
-  _calculateDepreciation() {
-    return this.sellIn <= 0 ? -2 : -1;
+; (function (exports) {
+  class AgedBrie extends StandardItem {
+    _calculateDepreciation() {
+      return this.sellIn <= 0 ? -2 : -1;
+    }
   }
-
-}
-
-export default AgedBrie;
+  exports.AgedBrie = AgedBrie;
+}(this));

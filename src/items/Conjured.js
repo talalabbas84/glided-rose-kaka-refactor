@@ -1,9 +1,10 @@
-import StandardItem from "./StandardItem";
+'use strict';
 
-class Conjured extends StandardItem {
-  _calculateDepreciation() {
-    return this.sellIn <= 0 ? 4 : 2;
+; (function (exports) {
+  class Conjured extends StandardItem {
+    _calculateDepreciation() {
+      return this.sellIn <= 0 ? 4 : 2;
+    }
   }
-}
-
-export default Conjured;
+  exports.Conjured = ConjuredItem;
+}(this))

@@ -1,3 +1,6 @@
+'use strict';
+
+; (function (exports) {
 class Item {
   constructor(name, sellIn, quality) {
     this.name = name;
@@ -6,5 +9,5 @@ class Item {
     console.info("hi");
   }
 }
-
-export default Item;
+  exports.Item = Item;
+}(this));
