@@ -2,7 +2,6 @@
 import Item from "./Item";
 
 class StandardItem extends Item {
-
   tomorrowItem() {
     this.quality = this._qualityTomorrow();
     this.sellIn--;
