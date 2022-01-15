@@ -7,7 +7,7 @@
     }
     updateStock() {
       return this.items.map(function (item) {
-        return item.itemTomorrow();
+        return item.tomorrowItem();
       });
     }
   }

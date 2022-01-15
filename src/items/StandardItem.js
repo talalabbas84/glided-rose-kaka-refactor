@@ -4,7 +4,7 @@
 ; (function (exports) {
   class StandardItem extends Item {
     tomorrowItem() {
-      this.quality = this._qualityTomorrow();
+      this.quality = this._tomorrowQuality();
       this.sellIn--;
       return this;
     }
