@@ -6,5 +6,5 @@
       return this.sellIn <= 0 ? 4 : 2;
     }
   }
-  exports.Conjured = ConjuredItem;
+  exports.Conjured = Conjured;
 }(this))

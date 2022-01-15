@@ -2,7 +2,7 @@
 'use strict';
 
 ; (function (exports) {
-  class BackStagePass extends StandardItem {
+  class BackStagePasses extends StandardItem {
     _calculateDepreciation() {
       switch (true) {
         case this.sellIn <= 0:
@@ -16,5 +16,5 @@
       }
     }
   }
-  exports.BackStagePass = BackStagePass;
+  exports.BackStagePasses = BackStagePasses;
 }(this));

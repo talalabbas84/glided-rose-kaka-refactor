@@ -5,13 +5,13 @@
 <title>Gilded Rose Texttest Fixture</title>
 
 <script type="text/javascript" src="lib/jquery-1.7.1/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="src/Shop.js"></script>
-<script type="text/javascript" src="src/items/AgedBrie.js"></script>
-<script type="text/javascript" src="src/items/BackstagePasses.js"></script>
-<script type="text/javascript" src="src/items/Conjured.js"></script>
 <script type="text/javascript" src="src/items/Item.js"></script>
 <script type="text/javascript" src="src/items/StandardItem.js"></script>
 <script type="text/javascript" src="src/items/Sulfuras.js"></script>
+<script type="text/javascript" src="src/items/AgedBrie.js"></script>
+<script type="text/javascript" src="src/items/BackstagePasses.js"></script>
+<script type="text/javascript" src="src/Shop.js"></script>
+<script type="text/javascript" src="src/items/Conjured.js"></script>
 
 <script type="text/javascript">
   $( document ).ready(function() {
@@ -21,14 +21,14 @@
     items = [];
 
     items.push(new StandardItem('+5 Dexterity Vest', 10, 20));
-    // items.push(new AgedBrie('Aged Brie', 2, 0));
+    items.push(new AgedBrie('Aged Brie', 2, 0));
     items.push(new StandardItem('Elixir of the Mongoose', 5, 7));
     items.push(new Sulfuras('Sulfuras, Hand of Ragnaros', 0, 80));
     items.push(new Sulfuras('Sulfuras, Hand of Ragnaros', -1, 80));
-    // items.push(new BackStagePass('Backstage passes to a TAFKAL80ETC concert', 15, 20));
-    // items.push(new BackStagePass('Backstage passes to a TAFKAL80ETC concert', 10, 49));
-    // items.push(new BackStagePass('Backstage passes to a TAFKAL80ETC concert', 5, 49));
-    // items.push(new ConjuredItem('Conjured Mana Cake', 3, 6));
+    items.push(new BackStagePasses('Backstage passes to a TAFKAL80ETC concert', 15, 20));
+    items.push(new BackStagePasses('Backstage passes to a TAFKAL80ETC concert', 10, 49));
+    items.push(new BackStagePasses('Backstage passes to a TAFKAL80ETC concert', 5, 49));
+    items.push(new Conjured('Conjured Mana Cake', 3, 6));
 
     shop = new Shop(items);
 
