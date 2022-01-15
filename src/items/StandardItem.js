@@ -19,6 +19,5 @@
     }
 
   }
-
   exports.StandardItem = StandardItem;
 }(this));
